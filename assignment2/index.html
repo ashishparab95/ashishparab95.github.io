@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <title>Assignment 2</title>
+  </head>
+  <body>
+     
+      <script>
+
+        
+        document.body.innerHTML= "<h1 style='color:red'>CHECK CONSOLE FOR EXPLANATION</h1> <p><button onclick='assignment2()'> Start Assignment 2</button></p>";
+
+        function assignment2(){
+
+          //1
+          var counter = 0;
+          counter++; ++counter; alert( counter );
+          console.log("1- This will alert 2 because the assigned value of counter was incremented twice");
+
+
+          //2
+          var n = 2; n *= 3 + 5; alert( n );
+          console.log("2- This will alert 16 because the assigned value of n is multiplied by sum of 3 and 5");
+
+
+          //3
+          var a = 1, b = 1; 
+          var c = ++a; 
+          var d = b++;
+          alert("c is " + c);
+          console.log("3- This will alert 2 because value of a is incremented and then assigned to c");
+          alert("d is " + d);
+          console.log("3- This will alert 1 because value of b is assigned to c and then incremented");
+
+
+          //4
+          var a = 2; var x = 1 + (a *= 2);
+          alert(x);
+          console.log("4- This will alert 5 because 1 is added to multiplication of value of a and 2");
+
+
+          //5
+          var arr = prompt("Enter 4 numbers separated by comma").split(",");
+          alert("Largest number is " +Math.max.apply(null, arr));
+          console.log("5- This will alert the largest number which in this case is "+Math.max.apply(null, arr));
+
+
+          //6
+          a+b<4 ? result = 'Below' : result = 'Over';
+          alert(result);
+          console.log("6- This will alert Over because addition of and b is 6 which is less than 4");
+
+
+          //7
+          var a ;
+          switch(a= +prompt('a?', '')) {
+              case 0:
+                  alert(0);
+                  break;
+              case 1:
+                  alert(1);
+                  break;
+              case 2:
+              case 3:
+                  alert('2,3');
+                  break;
+              default:
+                  alert('something else');
+          }
+          console.log("7- If entered number is greater than or equal to 4 then it will alert something else");
+
+
+          //8
+          var age = prompt('Enter your age?', '');
+          if(age<=19) {
+            alert("you're a teenager");
+          }
+          else{
+            alert("you're not a teenager");
+          }
+          console.log("8- If entered age is lesser than or equal to 19 then it will alert you're a teenager");
+
+
+          //9
+          weekdays = ['Sunday','Monday','Tuesday','Wednesday','Friday','Saturday'];
+          var day = new Date().getDay();
+          switch(day){
+              case 0:
+              case 6:
+                  alert("Today is " + weekdays[day]+ "! It's a weekend //using switch");
+                  break;
+              default:
+                  alert("Today is " + weekdays[day] + "! //using switch");
+          }
+
+          if (day == 0 || day == 6) {
+              alert("Today is " + weekdays[day]+ "! It's a weekend //using if-else");
+          }
+          else{
+              alert("Today is " + weekdays[day]+ "!  //using if-else");
+          }
+          console.log("9- It will alert the current day of the week based on the system time");
+
+
+          //10
+          var hrs = new Date().getHours();
+          if (hrs>5 && hrs<12) {
+            document.body.style.background = "yellow";
+            alert("Good Morning!");
+          }
+          else if (hrs>12 && hrs<7) {
+            document.body.style.background = "blue";
+            alert("Good Evening!");
+          }
+          else{
+            document.body.style.background = "black";
+            alert("Good Night!");
+          }
+          console.log("10- It will alert a greeting based on the current system time");
+
+          alert("Thank you !");
+          console.log("Thank you !");
+
+        }
+
+      </script>
+
+  </body>
+</html>
