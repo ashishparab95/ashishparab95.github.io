@@ -35,7 +35,7 @@
           }
           function checkPrime(num) {
             primeNums = [];
-            if ( num%2 != 0 || num%5 != 0 || num%7 !=0) {
+            if ( num%2 != 0 || num%5 != 0 || num%7 != 0) {
               primeNums.push(num); 
             }
           }
@@ -49,6 +49,9 @@
 
           //6
           console.log("6- declaration is loaded before execution of code while expressions are loaded when they are reached")
+          alert("Function declaration - function findNemo(){something}");
+          alert("Function expression - var findNemo = function(){something}");
+
 
           //7
           var arrayMulti = prompt("Enter 2 numbers separated by comma").split(",");
