@@ -15,24 +15,23 @@
           console.log("1- First function will ask for confirmation only when age is less than 19 whereas second one will always ask for it.");
 
           //2
-          // var age = prompt("Enter age");
-          // checkAge(age);
-          // function checkAge(age){
-          //   (age>18) ?  true :  confirm("Did parents allow you? - this is using ternary ");
-          // }
+          var age = prompt("Enter age");
+          checkAge(age);
+          function checkAge(age){
+            (age>18) ?  true :  confirm("Did parents allow you? - this is using ternary ");
+          }
           
           //3
-          // var numarray = prompt("Enter 2 numbers separated by comma").split(",");
-          // checkMin(numarray[0],numarray[1]);
-          // function checkMin(x,y){
-          //   x>y ? alert(numarray[1] +" is smaller") : alert(numarray[0] +" is smaller");
-          // }
+          var numarray = prompt("Enter 2 numbers separated by comma").split(",");
+          checkMin(numarray[0],numarray[1]);
+          function checkMin(x,y){
+            x>y ? alert(numarray[1] +" is smaller") : alert(numarray[0] +" is smaller");
+          }
          
           //4
           var primeNums;
           for (var i = 1; i<101; i++) {
             checkPrime(i);
-
           }
           function checkPrime(num) {
             primeNums = [];
@@ -43,20 +42,20 @@
           console.log(primeNums);
 
           //5
-          // (function(){
-          //   alert('This is an IIFE function');
-          // })();
+          (function(){
+            alert('This is an IIFE function');
+          })();
 
 
           //6
-          // console.log("6- declaration is loaded before execution of code while expressions are loaded when they are reached")
+          console.log("6- declaration is loaded before execution of code while expressions are loaded when they are reached")
 
           //7
-          // var arrayMulti = prompt("Enter 2 numbers separated by comma").split(",");
-          // MultiArray(arrayMulti[0], arrayMulti[1]);
-          // function MultiArray(a,b){
-          //   alert(arrayMulti[0]*arrayMulti[1]);
-          // }
+          var arrayMulti = prompt("Enter 2 numbers separated by comma").split(",");
+          MultiArray(arrayMulti[0], arrayMulti[1]);
+          function MultiArray(a,b){
+            alert(arrayMulti[0]*arrayMulti[1]);
+          }
 
           //8
 
@@ -89,6 +88,7 @@
             }
           }
 
+          
 
 
         }
